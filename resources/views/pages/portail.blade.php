@@ -1,4 +1,4 @@
-@extends('layouts.base')
+@extends('layouts.base', ['title' => 'Portail'])
 
 @section('content')
     <div class="container">
@@ -12,7 +12,7 @@
                 </p>
             </div>
         </div>
-        <p>Tout pour une maintenance de qualit&eacute; au quotidien <a href="#">Source codes.</a></p>
+        <p>Tout pour une maintenance de qualit&eacute; au quotidien <a href="https://github.com/Rotterdam86/CMTS-">Source codes.</a></p>
 
         <hr/>
     </div>
