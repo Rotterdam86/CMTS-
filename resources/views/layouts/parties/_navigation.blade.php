@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg static-top navbar-dark bg-success" aria-label="Main navigation">
+<nav class="navbar navbar-expand-lg static-top navbar-dark bg-dark" aria-label="Main navigation">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ route('root_path') }}">CMTS@</a>
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
@@ -6,9 +6,9 @@
     </button>
 
     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="{{ route('portail_path') }}">Portail</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills nav-fill">
+       <li class="nav-item">
+          <a class="nav-link {{ set_active_route('portail_path') }}" aria-current="page" href="{{ route('portail_path') }}">Portail</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Données</a>
