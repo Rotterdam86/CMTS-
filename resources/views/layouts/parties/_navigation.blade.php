@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg static-top navbar-dark bg-dark" aria-label="Main navigation">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ route('root_path') }}">CMTS@</a>
+    <a class="navbar-brand" href="{{ route('root_path') }}">{{ Config('app.name') }}</a>
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

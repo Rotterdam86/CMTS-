@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
         function page_title($title)
         {
             // définition d'un titre de base
-            $base_title = 'CMTS@ - DGBF';
+            $base_title = config('app.name') . ' - DGBF';
             // si il n'ya pas de titre
             if($title == '')
             {
