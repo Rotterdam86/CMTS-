@@ -12,14 +12,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// tracer de la route d'accueil
 Route::get('/', [
     'as'   => 'root_path', // nom de la route
     'uses' => 'PagesController@home' // utilisation de la route
     ]);
 
-// tracer de la route pays
+// tracer de la route portail
 Route::get('/portail', [
     'as'   => 'portail_path', // nom de la route
     'uses' => 'PagesController@portail'
+]);
+
+// tracer de la route contact
+Route::get('/contact', [
+    'as'   => 'contact_path', // nom de la route
+    'uses' => 'ContactController@create'
 ]);

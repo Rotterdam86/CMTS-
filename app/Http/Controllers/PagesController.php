@@ -19,4 +19,11 @@ class PagesController extends Controller
         // on retourne la vue portail
         return view('pages.portail');
     }
+
+    // création de la methode contact
+    public function contact()
+    {
+        // on retourne la vue portail
+        //return view('pages.portail');
+    }
 }
