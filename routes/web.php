@@ -1,5 +1,6 @@
 <?php
 
+use App\Mail\ContactMessageCreated;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,8 +25,20 @@ Route::get('/portail', [
     'uses' => 'PagesController@portail'
 ]);
 
-// tracer de la route contact
+// tracer de la route contact avec la méthode get
 Route::get('/contact', [
     'as'   => 'contact_path', // nom de la route
     'uses' => 'ContactController@create'
 ]);
+
+// tracer de la route contact avec la méthode post
+Route::post('/contact', [
+    'as'   => 'contact_path', // nom de la route
+    'uses' => 'ContactController@store'
+]);
+
+// tracer de la route test-email
+Route::get('/test-email', function(){
+    return new ContactMessageCreated('YAO','BEUGRE ARMAND CHRISTIAN','christcelo@gmail.com','Je vous remercie pour tout !');
+} );
+

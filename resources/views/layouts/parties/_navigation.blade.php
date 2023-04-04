@@ -22,6 +22,9 @@
           <a class="nav-link" href="#">Notifications</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#">Artisans</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">Profile</a>
         </li>
         <li class="nav-item">
