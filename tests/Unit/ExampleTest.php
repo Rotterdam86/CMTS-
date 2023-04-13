@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
+//use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
@@ -11,6 +12,7 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
+    /** @test */
     public function test_example()
     {
         $this->assertTrue(true);

@@ -22,6 +22,8 @@ class ContactController extends Controller
     // définition de la methode store
     public function store(ContactRequest $request)
     {
+        // pause de 03 secondes
+        sleep(3);
         // enregistrement d'un sms
         $sms = sms::create($request->only('nom','prenom','email','sms'));
         // récupération des données passées en paramètres
@@ -36,7 +38,7 @@ class ContactController extends Controller
 
         // envoie du mail
         Mail::to(config('ecmts.admin_support_email'))
-              ->send(new ContactMessageCreated($sms));
+              ->queue(new ContactMessageCreated($sms));
         // Message de reception
         flashy('Nous vous repondrons dans les plus brefs délais');
         return redirect()->route('root_path');
